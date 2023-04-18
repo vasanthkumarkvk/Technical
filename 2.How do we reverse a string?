@@ -1,0 +1,10 @@
+str = input("Enter a string: ")  
+
+revs = str[::-1]
+
+print("orignal string:",str,"reversed string :" ,revs)
+
+
+[ THE OUTPUT OF THE PROGRAM.
+Enter a string: VASANTHAKUMAR
+orignal string: VASANTHAKUMAR reversed string : RAMUKAHTNASAV ]
