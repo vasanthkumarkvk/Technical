@@ -1,1 +1,18 @@
 
+
+n = int (input("Enter a non-negative integer: "))
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+result = factorial(n)
+
+print("The factorial of",n, "is",result)
+
+
+ [ THE OUTPUT OF THE PROGRAM
+    Enter a non-negative integer:6
+    The factorial of 6 is 720 ]
