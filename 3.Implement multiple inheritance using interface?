@@ -1,0 +1,59 @@
+# Define the interfaces
+class Shape:
+    def draw(self):
+        pass
+
+class Color:
+    def fill(self):
+        pass
+
+# Define the classes that implement the interfaces
+class Circle(Shape, Color):
+    def __init__(self, radius, color):
+        self.radius = radius
+        self.color = color
+    
+    def draw(self):
+        print("Drawing circle with radius", self.radius)
+    
+    def fill(self):
+        print("Filling circle with color", self.color)
+
+class Rectangle(Shape, Color):
+    def __init__(self, width, height, color):
+        self.width = width
+        self.height = height
+        self.color = color
+    
+    def draw(self):
+        print("Drawing rectangle with width", self.width, "and height", self.height)
+    
+    def fill(self):
+        print("Filling rectangle with color", self.color)
+
+# Get user input to create shapes
+shape_choice = input("Enter 'circle' or 'rectangle': ")
+
+if shape_choice == 'circle':
+    radius = float(input("Enter the radius of the circle: "))
+    color = input("Enter the color of the circle: ")
+    shape = Circle(radius, color)
+elif shape_choice == 'rectangle':
+    width = float(input("Enter the width of the rectangle: "))
+    height = float(input("Enter the height of the rectangle: "))
+    color = input("Enter the color of the rectangle: ")
+    shape = Rectangle(width, height, color)
+else:
+    print("Invalid shape choice")
+    exit()
+
+# Draw and fill the shape
+shape.draw()
+shape.fill()
+
+
+[  Enter 'circle' or 'rectangle': circle
+Enter the radius of the circle: 10
+Enter the color of the circle: blue
+Drawing circle with radius 10.0
+Filling circle with color blue ]
