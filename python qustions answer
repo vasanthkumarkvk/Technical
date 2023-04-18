@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    char str[1000];
+    int sum = 0;
+    int between_quotes = 0;
+    int i;
+
+    printf("Enter a string of single digits, letters, and quotes: ");
+    scanf("%[^\n]", str);
+
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] == '"') {
+            between_quotes = !between_quotes;
+        } else if (between_quotes && isdigit(str[i])) {
+            sum += str[i] - '0';
+        }
+    }
+
+    if (sum == 10) {
+        printf("yes\n");
+    } else {
+        printf("no\n");
+    }
+
+    return 0;
+}
