@@ -1,0 +1,17 @@
+def find_common_elements(arr1, arr2):
+    """
+    Find common elements between two arrays.
+    """
+    common_elements = []
+    for element in arr1:
+        if element in arr2 and element not in common_elements:
+            common_elements.append(element)
+    return common_elements
+
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [3, 4, 5, 6, 7]
+common_elements = find_common_elements(arr1, arr2)
+print(common_elements)
+
+[ OUTPUT OF THE PROGRAM. 
+  [3, 4, 5]    ].
