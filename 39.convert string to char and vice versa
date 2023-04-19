@@ -1,0 +1,18 @@
+
+1.convert a string to a list of its characters
+
+my_string = "hello"
+my_list = list(my_string)
+print(my_list) 
+ [ OUTPUT OF THE PROGRAM.
+    ['h', 'e', 'l', 'l', 'o'].
+    
+ 2. characters back to a string.
+ 
+     my_list = ['h', 'e', 'l', 'l', 'o']
+my_string = ''.join(my_list)
+print(my_string) 
+[ OUTPUT OF THE PROGRAM.
+   hello     ]
+
+      
