@@ -1,0 +1,7 @@
+my_list = ['apple', 'banana', 'orange', 'grape']
+my_string = ','.join(my_list)
+
+print(my_string)
+
+[  OUTPUT OF THE PROGRAM.
+   apple,banana,orange,grape    ]
