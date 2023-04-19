@@ -1,0 +1,24 @@
+my_dict = {}
+
+my_dict['apple'] = 1
+my_dict['banana'] = 2
+my_dict['cherry'] = 3
+
+print(my_dict['banana']) 
+
+for key in my_dict:
+    print(key, my_dict[key])
+
+if 'apple' in my_dict:
+    print('The value of "apple" is:', my_dict['apple'])
+else:
+    print('"apple" is not in the dictionary')
+
+del my_dict['cherry']
+
+[ OUTPUT OF THE PROGRAM.
+  2
+apple 1
+banana 2
+cherry 3
+The value of "apple" is: 1   ]
