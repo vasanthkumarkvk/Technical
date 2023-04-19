@@ -1,0 +1,20 @@
+string = "Hello World!"
+
+byte_array = bytearray(b"Hello World!")
+
+from io import StringIO
+string_io = StringIO("Hello World!")
+
+string = "Hello OpenAI!"
+byte_array[6:12] = b"OpenAI"
+string_io.write(" OpenAI!")
+new_string = string_io.getvalue()
+
+print("String:", string)
+print("Byte Array:", byte_array.decode())
+print("StringIO Object:", new_string)
+
+[ OUTPUT OF THE PROGRAM.
+  String: Hello OpenAI!
+Byte Array: Hello OpenAI
+StringIO Object:  OpenAI!rld!  ]
