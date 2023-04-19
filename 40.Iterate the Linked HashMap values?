@@ -1,1 +1,17 @@
 
+from collections import OrderedDict
+
+d = OrderedDict()
+d['a'] = 1
+d['b'] = 2
+d['c'] = 3
+
+for value in d.values():
+    print(value)
+    
+[
+   OUTPUT OF THE PROGRAM.
+       1
+       2
+       3
+          ]
