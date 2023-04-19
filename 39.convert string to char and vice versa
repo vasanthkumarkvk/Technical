@@ -14,5 +14,19 @@ my_string = ''.join(my_list)
 print(my_string) 
 [ OUTPUT OF THE PROGRAM.
    hello     ]
+   
+   
+3.convert a single character to a string (or vice versa).
+ 
+ my_char = 'a'
+my_string = str(my_char)
+print(my_string) 
 
-      
+my_string = "hello"
+my_char = my_string[0]
+print(my_char) 
+
+[ OUTPUT OF THE PROGRAM.
+   a
+   h     ]
+
