@@ -1,0 +1,44 @@
+class Animal:
+    def make_sound(self):
+        print("The animal makes a generic sound.")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("The dog barks.")
+
+    def make_sound_with_volume(self, volume=1):
+        bark = "woof" * volume
+        print(f"The dog barks: {bark}")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("The cat meows.")
+
+    def make_sound_with_pitch(self, pitch=1):
+        meow = "meow" + "!" * pitch
+        print(f"The cat meows: {meow}")
+
+animal = Animal()
+animal.make_sound()
+
+dog = Dog()
+dog.make_sound()
+
+cat = Cat()
+cat.make_sound()
+
+dog.make_sound_with_volume()
+dog.make_sound_with_volume(2)
+
+cat.make_sound_with_pitch()
+cat.make_sound_with_pitch(2)
+
+[ THE OYTPUT OF THE PROGRAM.
+The animal makes a generic sound.
+The dog barks.
+The cat meows.
+The dog barks: woof
+The dog barks: woofwoof
+The cat meows: meow!
+The cat meows: meow!!    ]
+> 
