@@ -1,0 +1,27 @@
+def is_palindrome(string_or_number):
+    """
+    Check if a string or number is palindrome.
+    """
+    string = str(string_or_number)
+
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
+string1 = "racecar"
+string2 = "hello"
+number1 = 12321
+number2 = 12345
+
+print(is_palindrome(string1)) 
+print(is_palindrome(string2)) 
+print(is_palindrome(number1)) 
+print(is_palindrome(number2)) 
+
+[ OUTPUT OF THE PROGRAM.
+   
+   True
+   False
+   True
+   False    ]
