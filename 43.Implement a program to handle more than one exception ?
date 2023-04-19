@@ -1,0 +1,13 @@
+try:
+    a = 10 / 0
+    b = 'hello' + 5
+except ZeroDivisionError:
+    print("Division by zero error occurred.")
+except TypeError:
+    print("Type error occurred.")
+except:
+    print("Some other error occurred.")
+    
+    [
+      OUTPUT OF THE PROGRAM. 
+         Division by zero error occurred.    ]
