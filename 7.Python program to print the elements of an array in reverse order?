@@ -1,0 +1,11 @@
+arr = input("Enter an array of integers separated by spaces: ").split()
+
+arr = [int(x) for x in arr]
+
+arr.reverse()
+
+print("The reversed array is: ", arr)
+
+[ THE OUTPUT OF THE PROGRAM. 
+  Enter an array of integers separated by spaces: 1 2 3 4 5 
+The reversed array is:  [5, 4, 3, 2, 1]    ].
