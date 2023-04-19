@@ -1,0 +1,19 @@
+def remove_duplicates(arr):
+    unique_arr = []
+
+    for elem in arr:
+        if elem not in unique_arr:
+            unique_arr.append(elem)
+
+    return unique_arr
+
+arr = [5,4,10,20,4,6,10,39,4,39]
+print("Original array:", arr)
+
+unique_arr = remove_duplicates(arr)
+print("Array without duplicates:", unique_arr)
+
+[
+   OUTPUT OF THE PROGRAM. 
+     Original array: [5, 4, 10, 20, 4, 6, 10, 39, 4, 39]
+Array without duplicates: [5, 4, 10, 20, 6, 39] ]
