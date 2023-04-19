@@ -1,0 +1,20 @@
+def print_pattern(n):
+    for i in range(n, 0, -1):
+        print("*" * i + " " * (2*n - 2*i) + "*" * i)
+
+n = int(input("Enter a number: "))
+print_pattern(n)
+
+[ OUTPUT OF THE PROGRAM. 
+ Enter a number: 4
+********
+***  ***
+**    **
+*      *
+Enter a number: 5
+**********
+****  ****
+***    ***
+**      **
+*        *
+ ]   
