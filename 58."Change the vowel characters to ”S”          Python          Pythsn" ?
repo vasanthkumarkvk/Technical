@@ -1,0 +1,20 @@
+def replace_vowels(string):
+    vowels = 'aeiouAEIOU'
+    new_string = ''
+    for char in string:
+        if char in vowels:
+            new_string += 'S'
+        else:
+            new_string += char
+    return new_string
+
+string = 'Python'
+new_string = replace_vowels(string)
+
+print("Original string:", string)
+print("New string:", new_string)
+
+ [
+      OUTPUT OF THE PROGRAM. 
+        Original string: Python
+        New string: PythSn      ]
