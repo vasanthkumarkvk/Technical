@@ -1,0 +1,18 @@
+def find_largest(arr):
+    max_elem = arr[0]
+
+    for elem in arr[1:]:
+        if elem > max_elem:
+            max_elem = elem
+
+    return max_elem
+
+arr = [5, 4, 10, 20, 6, 39]
+print("Original array:", arr)
+
+largest_elem = find_largest(arr)
+print("Largest element in the array:", largest_elem)
+
+[ OUTPUT OF THE PROGRAM.
+   Original array: [5, 4, 10, 20, 6, 39]
+Largest element in the array: 39.    ]
