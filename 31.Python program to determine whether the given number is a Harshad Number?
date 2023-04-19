@@ -1,1 +1,11 @@
+num = int(input("Enter a number: "))
 
+digit_sum = sum(int(d) for d in str(num))
+
+if num % digit_sum == 0:
+    print(num, "is a Harshad number")
+else:
+    print(num, "is not a Harshad number")
+[ OUTPUT OTF THE PROGRAM.
+Enter a number: 12
+12 is a Harshad number  ]
