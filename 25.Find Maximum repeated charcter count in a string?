@@ -1,0 +1,22 @@
+def find_max_char_count(s):
+    char_count = {}
+    max_count = 0
+    
+    for char in s:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    
+    for count in char_count.values():
+        if count > max_count:
+            max_count = count
+    
+    return max_count
+
+s = "hello world"
+max_count = find_max_char_count(s)
+print("Max repeated character count:", max_count)
+
+[ OUTPUT OF THE PROGRAM.
+  Max repeated character count: 3 ]
