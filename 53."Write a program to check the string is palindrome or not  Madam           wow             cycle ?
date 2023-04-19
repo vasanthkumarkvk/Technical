@@ -1,0 +1,15 @@
+def is_palindrome(s):
+    s = s.lower().replace(' ', '') 
+    return s == s[::-1] 
+
+strings = ["Madam", "wow", "cycle"]
+for s in strings:
+    if is_palindrome(s):
+        print(f"{s} is a palindrome")
+    else:
+        print(f"{s} is not a palindrome")
+
+[   OUTPUT OF THE PROGRAM. 
+    Madam is a palindrome
+wow is a palindrome
+cycle is not a palindrome   ]
