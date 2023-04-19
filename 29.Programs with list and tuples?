@@ -1,0 +1,72 @@
+1. Program to find the sum of elements in a list:
+{ 
+    numbers = [1, 2, 3, 4, 5]
+
+sum_of_numbers = sum(numbers)
+
+print("Sum of numbers:", sum_of_numbers) 
+
+[ OUTPUT OF THE PROGRAM.
+  Sum of numbers: 15  ]
+  
+  
+  2. Program to sort a list of names in alphabetical order:
+{  
+  names = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+sorted_names = sorted(names)
+
+print("Sorted names:", sorted_names)
+
+[ OUTPUT OF THE PROGRAM.
+  Sorted names: ['Alice', 'Bob', 'Charlie', 'David', 'Eve'].
+  
+  
+  3. Program to create a tuple of mixed data types:
+  { 
+    person = ("John", 30, "male", 1.75)
+
+print("Person:", person)
+
+[ OUTPUT OF THE PROGRAM.
+ person = ("John", 30, "male", 1.75) ]
+ 
+ 
+ 4. Program to unpack a tuple into variables:
+{  my_tuple = (1, 2, 3)
+
+a, b, c = my_tuple
+
+print("a:", a)
+print("b:", b)
+print("c:", c) }
+
+[ OUTPUT OF THE PROGRAM. 
+  a: 1
+  b: 2
+  c: 3
+]
+
+
+5. Program to find the length of a list using a loop:
+{
+   numbers = [1, 2, 3, 4, 5]
+
+\count = 0
+
+for number in numbers:
+    count += 1
+
+print("Length of list:", count)  }
+
+[ OUTPUT OF THE PROGRAM.
+  Length of list: 5  ]
+  
+  
+  
+
+
+  
+
+
+   
