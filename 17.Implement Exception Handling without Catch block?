@@ -1,0 +1,17 @@
+from contextlib import contextmanager
+
+@contextmanager
+def handle_exception():
+    try:
+        yield
+    except Exception as e:
+        print(f"Exception caught: {e}")
+
+with handle_exception():
+    print("Executing some code...")
+    1/0
+    print("This code won't be executed...") 
+    
+[ OUTPUT OF THE PROGRAM.
+   Executing some code...
+Exception caught: division by zero ]
