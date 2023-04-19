@@ -1,0 +1,15 @@
+def check_vowels(string):
+    vowels = 'aeiouAEIOU'
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+string = "Codoid innovations"
+num_vowels = check_vowels(string)
+
+print("Number of vowels in the string:", num_vowels)
+
+[ OUTPUT OF THE PROGRAM.
+  Number of vowels in the string: 8    ]
