@@ -1,0 +1,29 @@
+def quick_sort(arr):
+    """
+    This function implements the Quick Sort algorithm recursively.
+    """
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        left = []
+        right = []
+        for i in range(1, len(arr)):
+            if arr[i] < pivot:
+                left.append(arr[i])
+            else:
+                right.append(arr[i])
+        return quick_sort(left) + [pivot] + quick_sort(right)
+
+input_str = input("Enter numbers separated by spaces: ")
+input_list = [int(x) for x in input_str.split()]
+
+sorted_list = quick_sort(input_list)
+
+print("Sorted list:", sorted_list)
+
+[ OUTPUT OF THE PROGRAM.
+  Enter numbers separated by spaces:  5 4 8 3 2 1
+5 4 8 3 2 1
+Sorted list: [1, 2, 3, 4, 5, 8]
+   ]
