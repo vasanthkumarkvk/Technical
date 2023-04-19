@@ -1,0 +1,14 @@
+my_set = {1, 2, 3, 4, 5}
+
+my_stream = (x for x in my_set)
+
+for item in my_stream:
+    print(item)
+    
+    [   OUTPUT OF THE PROGRAM. 
+          1
+          2
+          3
+          4
+          5
+               ] 
